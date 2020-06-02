@@ -6491,7 +6491,7 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <part name="P+7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="GND9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="Y1" library="SparkFun-Clocks" deviceset="CRYSTAL-32.768KHZ" device="PTH-2X6" value="32.768kHz"/>
-<part name="R4" library="RC1a_Main_2-20-2018_m" deviceset="SPARKFUN-PASSIVES_RESISTOR" device="0805-RES" value="22k"/>
+<part name="R4" library="RC1a_Main_2-20-2018_m" deviceset="SPARKFUN-PASSIVES_RESISTOR" device="0805-RES" value="220"/>
 </parts>
 <sheets>
 <sheet>

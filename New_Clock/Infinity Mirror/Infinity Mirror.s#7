@@ -6854,7 +6854,7 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <pinref part="Y1" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="N$5" class="0">
+<net name="8-CKIN" class="0">
 <segment>
 <pinref part="R5" gate="G$1" pin="1"/>
 <pinref part="C3" gate="G$1" pin="1"/>
@@ -6863,6 +6863,7 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <wire x1="91.44" y1="83.82" x2="91.44" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="91.44" y1="88.9" x2="96.52" y2="88.9" width="0.1524" layer="91"/>
 <junction x="96.52" y="88.9"/>
+<label x="88.9" y="88.9" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="AUDIO_IN" class="0">

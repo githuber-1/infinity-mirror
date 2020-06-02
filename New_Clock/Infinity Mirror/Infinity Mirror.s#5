@@ -6663,11 +6663,6 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <wire x1="104.14" y1="96.52" x2="109.22" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="GND3" gate="1" pin="GND"/>
-<pinref part="IC1" gate="G$1" pin="2-VSSA"/>
-<wire x1="45.72" y1="81.28" x2="58.42" y2="81.28" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="C4" gate="G$1" pin="2"/>
 <pinref part="GND6" gate="1" pin="GND"/>
 </segment>
@@ -6994,6 +6989,14 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <wire x1="58.42" y1="83.82" x2="60.96" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="83.82" x2="60.96" y2="91.44" width="0.1524" layer="91"/>
 <label x="55.88" y="83.82" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="2-VSSA" class="0">
+<segment>
+<pinref part="GND3" gate="1" pin="GND"/>
+<pinref part="IC1" gate="G$1" pin="2-VSSA"/>
+<wire x1="45.72" y1="81.28" x2="58.42" y2="81.28" width="0.1524" layer="91"/>
+<label x="55.88" y="81.28" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>

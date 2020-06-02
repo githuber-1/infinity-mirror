@@ -6472,7 +6472,7 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <part name="IC1" library="SparkFun-IC-Special-Function" deviceset="MSGEQ7" device="DIL" value="MSGEQ7P"/>
 <part name="R3" library="RC1a_Main_2-20-2018_m" deviceset="SPARKFUN-PASSIVES_RESISTOR" device="0805-RES" value="22k"/>
 <part name="C2" library="Terra_4.0_12_DIP_JJM_EB2_9-6-2018d" deviceset="SPARKFUN-CAPACITORS_CAP" device="0805" value="0.01uF"/>
-<part name="J2" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_06" device="SILK_FEMALE_PTH" package3d_urn="urn:adsk.eagle:package:38009/1"/>
+<part name="J2" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_06" device="SILK_FEMALE_PTH" package3d_urn="urn:adsk.eagle:package:38009/1" value="AUDIO_POTS"/>
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R5" library="RC1a_Main_2-20-2018_m" deviceset="SPARKFUN-PASSIVES_RESISTOR" device="0805-RES" value="200k"/>
 <part name="C3" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="0.33UF/330NF" device="-0805-50V-10%" package3d_urn="urn:adsk.eagle:package:37429/1" value="33pF"/>
@@ -6769,12 +6769,12 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <segment>
 <pinref part="IC1" gate="G$1" pin="1-VDD"/>
 <pinref part="P+5" gate="VCC" pin="VCC"/>
-<wire x1="50.8" y1="83.82" x2="55.88" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="83.82" x2="58.42" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="C5" gate="G$1" pin="2"/>
-<wire x1="55.88" y1="83.82" x2="58.42" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="58.42" y1="83.82" x2="60.96" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="83.82" x2="60.96" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="83.82" x2="60.96" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="86.36" x2="60.96" y2="91.44" width="0.1524" layer="91"/>
 <label x="55.88" y="83.82" size="1.778" layer="95"/>
+<junction x="58.42" y="83.82"/>
 </segment>
 </net>
 <net name="SDA" class="0">
