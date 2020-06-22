@@ -590,10 +590,6 @@ Holes are staggered by 0.005" from center to hold pins while soldering.
 <pad name="2" x="2.7178" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
 <text x="-1.27" y="1.397" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
 <text x="-1.27" y="-2.032" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
-<wire x1="-1.53" y1="3.25" x2="-1.53" y2="-3.25" width="0.1524" layer="21"/>
-<wire x1="-1.53" y1="-3.25" x2="4.07" y2="-3.25" width="0.1524" layer="21"/>
-<wire x1="4.07" y1="-3.25" x2="4.07" y2="3.25" width="0.1524" layer="21"/>
-<wire x1="4.07" y1="3.25" x2="-1.53" y2="3.25" width="0.1524" layer="21"/>
 </package>
 <package name="SPARKFUN-CONNECTORS_1X02_LOCK_LONGPADS">
 <description>&lt;h3&gt;Plated Through Hole - Long Pads with Locking Footprint&lt;/h3&gt;
@@ -6491,6 +6487,9 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <part name="S1" library="SparkFun-Switches" deviceset="SWITCH-SPDT" device="-PTH-11.6X4.0MM-LOCK"/>
 <part name="GND8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
+<part name="J4" library="RC1a_Main_2-20-2018_m" deviceset="SPARKFUN-CONNECTORS_CONN_02" device="LOCK" value="LED_CAP"/>
+<part name="P+7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
+<part name="GND9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="Y1" library="SparkFun-Clocks" deviceset="CRYSTAL-32.768KHZ" device="PTH-2X6" value="32.768kHz"/>
 <part name="R4" library="RC1a_Main_2-20-2018_m" deviceset="SPARKFUN-PASSIVES_RESISTOR" device="0805-RES" value="220"/>
 </parts>
@@ -6617,6 +6616,16 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <instance part="P+6" gate="VCC" x="132.08" y="22.86" smashed="yes" rot="MR90">
 <attribute name="VALUE" x="134.62" y="25.4" size="1.778" layer="96" rot="MR270"/>
 </instance>
+<instance part="J4" gate="G$1" x="71.12" y="114.3" smashed="yes" rot="R180">
+<attribute name="VALUE" x="73.66" y="119.126" size="1.778" layer="96" font="vector" rot="R180"/>
+<attribute name="NAME" x="73.66" y="108.712" size="1.778" layer="95" font="vector" rot="R180"/>
+</instance>
+<instance part="P+7" gate="VCC" x="60.96" y="116.84" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="58.42" y="119.38" size="1.778" layer="96" rot="MR180"/>
+</instance>
+<instance part="GND9" gate="1" x="60.96" y="109.22" smashed="yes">
+<attribute name="VALUE" x="58.42" y="106.68" size="1.778" layer="96"/>
+</instance>
 <instance part="Y1" gate="G$1" x="170.18" y="45.72" smashed="yes" rot="R90">
 <attribute name="NAME" x="168.148" y="45.72" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
 <attribute name="VALUE" x="172.212" y="45.72" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
@@ -6688,6 +6697,11 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <pinref part="GND8" gate="1" pin="GND"/>
 </segment>
 <segment>
+<pinref part="GND9" gate="1" pin="GND"/>
+<pinref part="J4" gate="G$1" pin="2"/>
+<wire x1="60.96" y1="111.76" x2="63.5" y2="111.76" width="0.1524" layer="91"/>
+</segment>
+<segment>
 <pinref part="GND3" gate="1" pin="GND"/>
 <pinref part="IC1" gate="G$1" pin="2-VSSA"/>
 <wire x1="45.72" y1="81.28" x2="58.42" y2="81.28" width="0.1524" layer="91"/>
@@ -6746,6 +6760,11 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <pinref part="S1" gate="1" pin="O"/>
 <wire x1="129.54" y1="22.86" x2="127" y2="22.86" width="0.1524" layer="91"/>
 <pinref part="P+6" gate="VCC" pin="VCC"/>
+</segment>
+<segment>
+<pinref part="J4" gate="G$1" pin="1"/>
+<pinref part="P+7" gate="VCC" pin="VCC"/>
+<wire x1="63.5" y1="114.3" x2="60.96" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="1-VDD"/>
@@ -6968,10 +6987,6 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <pinref part="J3" gate="J$1" pin="2"/>
 <wire x1="88.9" y1="111.76" x2="93.98" y2="111.76" width="0.1524" layer="91"/>
 <label x="88.9" y="111.76" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="U$1" gate="G$1" pin="~6"/>
-<wire x1="88.9" y1="43.18" x2="91.44" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="3" class="0">

@@ -6988,6 +6988,11 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <wire x1="88.9" y1="111.76" x2="93.98" y2="111.76" width="0.1524" layer="91"/>
 <label x="88.9" y="111.76" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="~6"/>
+<wire x1="88.9" y1="43.18" x2="91.44" y2="43.18" width="0.1524" layer="91"/>
+<label x="88.9" y="43.18" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="3" class="0">
 <segment>

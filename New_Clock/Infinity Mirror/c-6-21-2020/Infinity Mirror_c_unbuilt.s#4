@@ -2471,6 +2471,18 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <pad name="TA4" x="-7.62" y="1.27" drill="1.016" diameter="1.778"/>
 <pad name="TA5" x="-7.62" y="-1.27" drill="1.016" diameter="1.778"/>
 </package>
+<package name="ROTARY-SWITCH-8POS">
+<circle x="0" y="0" radius="8" width="0.1524" layer="21"/>
+<pad name="4" x="7.391" y="3.061" drill="0.6"/>
+<pad name="3" x="3.061" y="7.391" drill="0.6"/>
+<pad name="2" x="-3.061" y="7.391" drill="0.6"/>
+<pad name="VIN" x="-7.391" y="3.061" drill="0.6"/>
+<pad name="GND" x="-7.391" y="-3.061" drill="0.6"/>
+<pad name="7" x="-3.061" y="-7.391" drill="0.6"/>
+<pad name="6" x="3.061" y="-7.391" drill="0.6"/>
+<pad name="5" x="7.391" y="-3.061" drill="0.6"/>
+<pad name="VOUT" x="0" y="-2.65" drill="0.6"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ARDUINO_PROTRINKET_5V">
@@ -2502,6 +2514,18 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <wire x1="-30.48" y1="0" x2="-12.7" y2="0" width="0.254" layer="94"/>
 <wire x1="-12.7" y1="0" x2="-12.7" y2="33.02" width="0.254" layer="94"/>
 <wire x1="-12.7" y1="33.02" x2="-30.48" y2="33.02" width="0.254" layer="94"/>
+</symbol>
+<symbol name="ROTARY-SWITCH-8POS">
+<circle x="0" y="0" radius="13.678315625" width="0.1524" layer="94"/>
+<pin name="VIN" x="-15.24" y="7.62" length="middle"/>
+<pin name="2" x="-2.54" y="17.78" length="middle" rot="R270"/>
+<pin name="3" x="5.08" y="17.78" length="middle" rot="R270"/>
+<pin name="4" x="15.24" y="7.62" length="middle" rot="R180"/>
+<pin name="5" x="15.24" y="-5.08" length="middle" rot="R180"/>
+<pin name="6" x="5.08" y="-17.78" length="middle" rot="R90"/>
+<pin name="7" x="-2.54" y="-17.78" length="middle" rot="R90"/>
+<pin name="GND" x="-15.24" y="-5.08" length="middle"/>
+<pin name="VOUT" x="5.08" y="-2.54" length="middle" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -2536,6 +2560,29 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <connect gate="G$1" pin="~5" pad="T~5"/>
 <connect gate="G$1" pin="~6" pad="T~6"/>
 <connect gate="G$1" pin="~9" pad="T~9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ROTARY-SWITCH-8POS">
+<gates>
+<gate name="G$1" symbol="ROTARY-SWITCH-8POS" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="ROTARY-SWITCH-8POS">
+<connects>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="VIN" pad="VIN"/>
+<connect gate="G$1" pin="VOUT" pad="VOUT"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -6493,6 +6540,8 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <part name="P+6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="Y1" library="SparkFun-Clocks" deviceset="CRYSTAL-32.768KHZ" device="PTH-2X6" value="32.768kHz"/>
 <part name="R4" library="RC1a_Main_2-20-2018_m" deviceset="SPARKFUN-PASSIVES_RESISTOR" device="0805-RES" value="220"/>
+<part name="U$2" library="_111_IH" deviceset="ROTARY-SWITCH-8POS" device=""/>
+<part name="U$3" library="_111_IH" deviceset="ROTARY-SWITCH-8POS" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6625,6 +6674,8 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <attribute name="NAME" x="107.95" y="21.8186" size="1.778" layer="95"/>
 <attribute name="VALUE" x="107.95" y="17.018" size="1.778" layer="96"/>
 </instance>
+<instance part="U$2" gate="G$1" x="167.64" y="134.62" smashed="yes"/>
+<instance part="U$3" gate="G$1" x="210.82" y="134.62" smashed="yes"/>
 </instances>
 <busses>
 </busses>
@@ -6991,6 +7042,114 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <pinref part="U$1" gate="G$1" pin="~3"/>
 <wire x1="88.9" y1="35.56" x2="91.44" y2="35.56" width="0.1524" layer="91"/>
 <label x="91.44" y="35.56" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="4"/>
+<wire x1="182.88" y1="142.24" x2="185.42" y2="142.24" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="3"/>
+<wire x1="172.72" y1="152.4" x2="172.72" y2="154.94" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="2"/>
+<wire x1="165.1" y1="152.4" x2="165.1" y2="154.94" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="VIN"/>
+<wire x1="152.4" y1="142.24" x2="149.86" y2="142.24" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="GND"/>
+<wire x1="152.4" y1="129.54" x2="149.86" y2="129.54" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="7"/>
+<wire x1="165.1" y1="116.84" x2="165.1" y2="114.3" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$7" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="6"/>
+<wire x1="172.72" y1="116.84" x2="172.72" y2="114.3" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="5"/>
+<wire x1="182.88" y1="129.54" x2="185.42" y2="129.54" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$10" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="VOUT"/>
+<wire x1="172.72" y1="132.08" x2="175.26" y2="132.08" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$11" class="0">
+<segment>
+<pinref part="U$3" gate="G$1" pin="VOUT"/>
+<wire x1="215.9" y1="132.08" x2="218.44" y2="132.08" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$12" class="0">
+<segment>
+<pinref part="U$3" gate="G$1" pin="5"/>
+<wire x1="226.06" y1="129.54" x2="228.6" y2="129.54" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$13" class="0">
+<segment>
+<pinref part="U$3" gate="G$1" pin="6"/>
+<wire x1="215.9" y1="116.84" x2="215.9" y2="114.3" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$14" class="0">
+<segment>
+<pinref part="U$3" gate="G$1" pin="7"/>
+<wire x1="208.28" y1="116.84" x2="208.28" y2="114.3" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$15" class="0">
+<segment>
+<pinref part="U$3" gate="G$1" pin="GND"/>
+<wire x1="195.58" y1="129.54" x2="193.04" y2="129.54" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$16" class="0">
+<segment>
+<pinref part="U$3" gate="G$1" pin="VIN"/>
+<wire x1="195.58" y1="142.24" x2="193.04" y2="142.24" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$17" class="0">
+<segment>
+<pinref part="U$3" gate="G$1" pin="2"/>
+<wire x1="208.28" y1="152.4" x2="208.28" y2="154.94" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$18" class="0">
+<segment>
+<pinref part="U$3" gate="G$1" pin="3"/>
+<wire x1="215.9" y1="152.4" x2="215.9" y2="154.94" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$19" class="0">
+<segment>
+<pinref part="U$3" gate="G$1" pin="4"/>
+<wire x1="226.06" y1="142.24" x2="228.6" y2="142.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
