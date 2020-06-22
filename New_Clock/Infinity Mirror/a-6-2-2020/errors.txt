@@ -1,0 +1,7 @@
+Errors:
+
+-J1 overlaps header pins for Arduino
+-J1 overlaps battery holder VBAT pad
+-J2 overlaps R3
+-J3 and J4 overlap one another
+-J3 Dataout is not connected to pin 6 of Arduino

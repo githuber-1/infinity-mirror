@@ -1,3 +1,5 @@
+// Confirmed that Infinity Mirror_a_Built-6-2-2020 works with MSGEQ7 on 6-20-2020s
+
 int strobePin = 8;
 int resetPin = 10;
 int outPin = A3;
@@ -38,8 +40,11 @@ void loop() {
   }
  
   for (int i = 0; i < 7; i++) {
-    Serial.print       (level[i]);
-    Serial.print       (",");
+    if(i == 0){
+      Serial.print       (level[i]);
+    }
+//    Serial.print       (level[i]);
+//    Serial.print       (",");
   }
  
   Serial.println ();  

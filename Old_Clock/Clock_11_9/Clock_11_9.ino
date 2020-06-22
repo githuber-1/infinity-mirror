@@ -101,7 +101,7 @@ void setup() {
     Serial.println("RTC is NOT running!");
   }
   //Set clock to the current time.  Only include this line for the initial clock set.  Then comment out line and re-upload.
-  //rtc.adjust(DateTime(F(__DATE__), F(__TIME__)));
+  rtc.adjust(DateTime(F(__DATE__), F(__TIME__)));
 }
 
 
