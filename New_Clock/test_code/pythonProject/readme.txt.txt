@@ -1,0 +1,1 @@
+Does not work on ESP32. Causes constant flickering on LEDs. Tried multiple libraries and level shifter as well.
