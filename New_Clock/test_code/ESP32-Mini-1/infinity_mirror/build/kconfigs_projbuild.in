@@ -1,0 +1,7 @@
+source "C:/Users/huber/ESP32/esp-idf/components/app_update/Kconfig.projbuild"
+source "C:/Users/huber/ESP32/esp-idf/components/bootloader/Kconfig.projbuild"
+source "C:/Users/huber/ESP32/esp-idf/components/esptool_py/Kconfig.projbuild"
+source "C:/Users/huber/ESP32/esp-idf/components/partition_table/Kconfig.projbuild"
+source "C:/Users/huber/ESP32/esp-idf/examples/common_components/protocol_examples_common/Kconfig.projbuild"
+source "C:/Users/huber/ESP32/projects/infinity_mirror/components/esp32-neopixel/Kconfig.projbuild"
+source "C:/Users/huber/ESP32/projects/infinity_mirror/components/led_controller/Kconfig.projbuild"
