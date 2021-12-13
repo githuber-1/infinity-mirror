@@ -1,0 +1,3 @@
+[submodule "infinity-mirror-sw"]
+	path = infinity-mirror-sw
+	url = https://github.com/githuber-1/infinity-mirror-sw.git
