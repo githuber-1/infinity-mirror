@@ -52,7 +52,7 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
@@ -153,6 +153,70 @@
 <wire x1="7" y1="-7" x2="-7" y2="-7" width="0.127" layer="21"/>
 <wire x1="-7" y1="-7" x2="-7" y2="12.5" width="0.127" layer="21"/>
 </package>
+<package name="CP2102_QFN24">
+<description>QFN24 Package</description>
+<polygon width="0.1524" layer="1">
+<vertex x="-1.275" y="-1.275"/>
+<vertex x="1.275" y="-1.275"/>
+<vertex x="1.275" y="1.275"/>
+<vertex x="-1" y="1.275"/>
+<vertex x="-1.275" y="1"/>
+</polygon>
+<smd name="P$1" x="-1.95" y="0.25" dx="0.85" dy="0.3" layer="1" rot="R180"/>
+<smd name="P$2" x="-1.95" y="-0.25" dx="0.85" dy="0.3" layer="1" rot="R180"/>
+<smd name="P$3" x="-1.95" y="0.75" dx="0.85" dy="0.3" layer="1" rot="R180"/>
+<smd name="P$4" x="-1.95" y="-0.75" dx="0.85" dy="0.3" layer="1" rot="R180"/>
+<smd name="P$5" x="-1.95" y="-1.25" dx="0.85" dy="0.3" layer="1" rot="R180"/>
+<smd name="P$6" x="-1.95" y="1.25" dx="0.85" dy="0.3" layer="1" roundness="5" rot="R180"/>
+<smd name="P$7" x="1.95" y="0.25" dx="0.85" dy="0.3" layer="1" rot="R180"/>
+<smd name="P$8" x="1.95" y="-0.25" dx="0.85" dy="0.3" layer="1" rot="R180"/>
+<smd name="P$9" x="1.95" y="0.75" dx="0.85" dy="0.3" layer="1" rot="R180"/>
+<smd name="P$10" x="1.95" y="-0.75" dx="0.85" dy="0.3" layer="1" rot="R180"/>
+<smd name="P$11" x="1.95" y="-1.25" dx="0.85" dy="0.3" layer="1" rot="R180"/>
+<smd name="P$12" x="1.95" y="1.25" dx="0.85" dy="0.3" layer="1" roundness="5" rot="R180"/>
+<smd name="P$13" x="-0.25" y="1.95" dx="0.85" dy="0.3" layer="1" rot="R270"/>
+<smd name="P$14" x="0.25" y="1.95" dx="0.85" dy="0.3" layer="1" rot="R270"/>
+<smd name="P$15" x="-0.75" y="1.95" dx="0.85" dy="0.3" layer="1" rot="R270"/>
+<smd name="P$16" x="0.75" y="1.95" dx="0.85" dy="0.3" layer="1" rot="R270"/>
+<smd name="P$17" x="1.25" y="1.95" dx="0.85" dy="0.3" layer="1" rot="R270"/>
+<smd name="P$18" x="-1.25" y="1.95" dx="0.85" dy="0.3" layer="1" roundness="5" rot="R270"/>
+<smd name="P$19" x="-0.25" y="-1.95" dx="0.85" dy="0.3" layer="1" rot="R270"/>
+<smd name="P$20" x="0.25" y="-1.95" dx="0.85" dy="0.3" layer="1" rot="R270"/>
+<smd name="P$21" x="-0.75" y="-1.95" dx="0.85" dy="0.3" layer="1" rot="R270"/>
+<smd name="P$22" x="0.75" y="-1.95" dx="0.85" dy="0.3" layer="1" rot="R270"/>
+<smd name="P$23" x="1.25" y="-1.95" dx="0.85" dy="0.3" layer="1" rot="R270"/>
+<smd name="P$24" x="-1.25" y="-1.95" dx="0.85" dy="0.3" layer="1" roundness="5" rot="R270"/>
+</package>
+<package name="3-PIN-JST">
+<pad name="P$1" x="-2" y="0" drill="0.6" shape="square"/>
+<pad name="P$2" x="0" y="0" drill="0.6" shape="square"/>
+<pad name="P$3" x="2" y="0" drill="0.6" shape="square"/>
+<wire x1="4" y1="2" x2="-4" y2="2" width="0.1524" layer="21"/>
+<wire x1="-4" y1="2" x2="-4" y2="-5" width="0.1524" layer="21"/>
+<wire x1="-4" y1="-5" x2="4" y2="-5" width="0.1524" layer="21"/>
+<wire x1="4" y1="-5" x2="4" y2="2" width="0.1524" layer="21"/>
+<text x="-4" y="2" size="1.778" layer="21">&gt;Name</text>
+<text x="-4" y="-7" size="1.778" layer="21">&gt;Value</text>
+</package>
+<package name="PEC11R-4320F-S0012">
+<pad name="C" x="0" y="-7.5" drill="1"/>
+<pad name="B" x="1.666665625" y="-7.5" drill="1"/>
+<pad name="A" x="-1.666665625" y="-7.5" drill="1"/>
+<pad name="VCC" x="-1.666665625" y="7" drill="1"/>
+<pad name="GND" x="1.666665625" y="7" drill="1"/>
+<hole x="-4" y="0" drill="2.6"/>
+<hole x="4" y="0" drill="2.6"/>
+<wire x1="-5" y1="2" x2="-5" y2="8" width="0.1524" layer="21"/>
+<wire x1="-5" y1="8" x2="-3" y2="8" width="0.1524" layer="21"/>
+<wire x1="3" y1="8" x2="5" y2="8" width="0.1524" layer="21"/>
+<wire x1="5" y1="8" x2="5" y2="2" width="0.1524" layer="21"/>
+<wire x1="-5" y1="-2" x2="-5" y2="-8" width="0.1524" layer="21"/>
+<wire x1="-5" y1="-8" x2="-3" y2="-8" width="0.1524" layer="21"/>
+<wire x1="3" y1="-8" x2="5" y2="-8" width="0.1524" layer="21"/>
+<wire x1="5" y1="-8" x2="5" y2="-2" width="0.1524" layer="21"/>
+<text x="-5" y="9" size="1.778" layer="21">&gt;NAME</text>
+<text x="-5" y="-11" size="1.778" layer="21">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="ESP32-MINI-1-N4">
@@ -220,6 +284,32 @@
 <text x="20.32" y="25.4" size="1.778" layer="95">&gt;Name</text>
 <text x="20.32" y="-27.94" size="1.778" layer="96">&gt;Value</text>
 </symbol>
+<symbol name="CP2102_QFN24">
+</symbol>
+<symbol name="3-PIN-JST">
+<pin name="P$1" x="-5.08" y="2.54" length="middle"/>
+<pin name="P$2" x="-5.08" y="0" length="middle"/>
+<pin name="P$3" x="-5.08" y="-2.54" length="middle"/>
+<wire x1="-2.54" y1="5.08" x2="2.54" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="5.08" x2="2.54" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-5.08" x2="-2.54" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="-5.08" x2="-2.54" y2="5.08" width="0.1524" layer="94"/>
+<text x="-2.54" y="5.08" size="1.778" layer="94">&gt;Name</text>
+<text x="-2.54" y="-7.62" size="1.778" layer="94">&gt;Value</text>
+</symbol>
+<symbol name="QUAD_ENCODER">
+<pin name="P$1" x="-7.62" y="-15.24" length="middle" rot="R90"/>
+<pin name="P$2" x="0" y="-15.24" length="middle" rot="R90"/>
+<pin name="P$3" x="7.62" y="-15.24" length="middle" rot="R90"/>
+<pin name="P$4" x="-5.08" y="15.24" length="middle" rot="R270"/>
+<pin name="P$5" x="5.08" y="15.24" length="middle" rot="R270"/>
+<wire x1="-10.16" y1="-10.16" x2="10.16" y2="-10.16" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-10.16" x2="10.16" y2="10.16" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="10.16" x2="-10.16" y2="10.16" width="0.1524" layer="94"/>
+<wire x1="-10.16" y1="10.16" x2="-10.16" y2="-10.16" width="0.1524" layer="94"/>
+<text x="-10.16" y="-5.08" size="1.778" layer="94" rot="R90">&gt;NAME</text>
+<text x="12.7" y="-5.08" size="1.778" layer="94" rot="R90">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="ESP32-MINI-1-N4">
@@ -285,6 +375,48 @@
 <connect gate="G$1" pin="NC@4" pad="37"/>
 <connect gate="G$1" pin="RXD0" pad="35"/>
 <connect gate="G$1" pin="TXD0" pad="36"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="3-PIN-JST">
+<gates>
+<gate name="G$1" symbol="3-PIN-JST" x="38.1" y="-5.08"/>
+</gates>
+<devices>
+<device name="" package="3-PIN-JST">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+<connect gate="G$1" pin="P$3" pad="P$3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PEC11R_ROTARY_ENCODER">
+<description>4 = PC Pin Horizontal / Rear Facing
+3 = 12 Detents
+20 = 20.0mm long shaft
+F = Metal Flatted Shaft
+S = Push Momentary Switch
+001 = 12 pulses per 360</description>
+<gates>
+<gate name="G$1" symbol="QUAD_ENCODER" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="PEC11R-4320F-S0012">
+<connects>
+<connect gate="G$1" pin="P$1" pad="A"/>
+<connect gate="G$1" pin="P$2" pad="C"/>
+<connect gate="G$1" pin="P$3" pad="B"/>
+<connect gate="G$1" pin="P$4" pad="GND"/>
+<connect gate="G$1" pin="P$5" pad="VCC"/>
 </connects>
 <technologies>
 <technology name=""/>
