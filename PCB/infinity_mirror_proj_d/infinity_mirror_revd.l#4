@@ -75,10 +75,7 @@
 <packages>
 <package name="ESP32-MINI-1-N4">
 <description>ESP32-MINI-1-N4</description>
-<wire x1="-6.8" y1="6.8" x2="-6.8" y2="-6.8" width="0.127" layer="20"/>
-<wire x1="-6.8" y1="-6.8" x2="6.8" y2="-6.8" width="0.127" layer="20"/>
-<wire x1="6.8" y1="-6.8" x2="6.8" y2="6.8" width="0.127" layer="20"/>
-<wire x1="6.8" y1="6.8" x2="-6.8" y2="6.8" width="0.127" layer="20"/>
+<wire x1="7" y1="6.8" x2="-7" y2="6.8" width="0.127" layer="21"/>
 <smd name="20" x="-0.4" y="-6.05" dx="0.4" dy="0.8" layer="1"/>
 <smd name="21" x="0.4" y="-6.05" dx="0.4" dy="0.8" layer="1"/>
 <smd name="22" x="1.2" y="-6.05" dx="0.4" dy="0.8" layer="1"/>
@@ -149,9 +146,11 @@
 <vertex x="-1" y="2"/>
 </polygon>
 <wire x1="-7" y1="12.5" x2="7" y2="12.5" width="0.127" layer="21"/>
-<wire x1="7" y1="12.5" x2="7" y2="-7" width="0.127" layer="21"/>
+<wire x1="7" y1="12.5" x2="7" y2="6.8" width="0.127" layer="21"/>
+<wire x1="7" y1="6.8" x2="7" y2="-7" width="0.127" layer="21"/>
 <wire x1="7" y1="-7" x2="-7" y2="-7" width="0.127" layer="21"/>
-<wire x1="-7" y1="-7" x2="-7" y2="12.5" width="0.127" layer="21"/>
+<wire x1="-7" y1="-7" x2="-7" y2="6.8" width="0.127" layer="21"/>
+<wire x1="-7" y1="6.8" x2="-7" y2="12.5" width="0.127" layer="21"/>
 </package>
 <package name="CP2102_QFN24">
 <description>QFN24 Package</description>
@@ -285,6 +284,34 @@
 <text x="20.32" y="-27.94" size="1.778" layer="96">&gt;Value</text>
 </symbol>
 <symbol name="CP2102_QFN24">
+<pin name="1" x="-22.86" y="7.62" length="middle"/>
+<pin name="2" x="-22.86" y="5.08" length="middle"/>
+<pin name="3" x="-22.86" y="2.54" length="middle"/>
+<pin name="4" x="-22.86" y="-2.54" length="middle"/>
+<pin name="5" x="-22.86" y="-5.08" length="middle"/>
+<pin name="6" x="-22.86" y="-7.62" length="middle"/>
+<pin name="7" x="-10.16" y="-15.24" length="middle" rot="R90"/>
+<pin name="8" x="-7.62" y="-15.24" length="middle" rot="R90"/>
+<pin name="9" x="-5.08" y="-15.24" length="middle" rot="R90"/>
+<pin name="10" x="5.08" y="-15.24" length="middle" rot="R90"/>
+<pin name="11" x="7.62" y="-15.24" length="middle" rot="R90"/>
+<pin name="12" x="10.16" y="-15.24" length="middle" rot="R90"/>
+<pin name="13" x="22.86" y="-7.62" length="middle" rot="R180"/>
+<pin name="14" x="22.86" y="-5.08" length="middle" rot="R180"/>
+<pin name="15" x="22.86" y="-2.54" length="middle" rot="R180"/>
+<pin name="16" x="22.86" y="2.54" length="middle" rot="R180"/>
+<pin name="17" x="22.86" y="5.08" length="middle" rot="R180"/>
+<pin name="18" x="22.86" y="7.62" length="middle" rot="R180"/>
+<pin name="19" x="10.16" y="15.24" length="middle" rot="R270"/>
+<pin name="20" x="7.62" y="15.24" length="middle" rot="R270"/>
+<pin name="21" x="5.08" y="15.24" length="middle" rot="R270"/>
+<pin name="22" x="-5.08" y="15.24" length="middle" rot="R270"/>
+<pin name="23" x="-7.62" y="15.24" length="middle" rot="R270"/>
+<pin name="24" x="-10.16" y="15.24" length="middle" rot="R270"/>
+<wire x1="-17.78" y1="-10.16" x2="17.78" y2="-10.16" width="0.1524" layer="94"/>
+<wire x1="-17.78" y1="-10.16" x2="-17.78" y2="10.16" width="0.1524" layer="94"/>
+<wire x1="17.78" y1="-10.16" x2="17.78" y2="10.16" width="0.1524" layer="94"/>
+<wire x1="17.78" y1="10.16" x2="-17.78" y2="10.16" width="0.1524" layer="94"/>
 </symbol>
 <symbol name="3-PIN-JST">
 <pin name="P$1" x="-5.08" y="2.54" length="middle"/>
@@ -418,6 +445,17 @@ S = Push Momentary Switch
 <connect gate="G$1" pin="P$4" pad="GND"/>
 <connect gate="G$1" pin="P$5" pad="VCC"/>
 </connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CP2102">
+<gates>
+</gates>
+<devices>
+<device name="" package="CP2102_QFN24">
 <technologies>
 <technology name=""/>
 </technologies>
