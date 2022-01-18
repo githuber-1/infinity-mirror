@@ -3464,8 +3464,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="R11" library="_111_IH" deviceset="RESISTOR" device="" value="10k"/>
 <part name="SUPPLY9" library="SparkFun-PowerSymbols" deviceset="VCC_1" device="" value="VCC_5V"/>
 <part name="SUPPLY10" library="SparkFun-PowerSymbols" deviceset="VCC_2" device="" value="VCC_3V3"/>
-<part name="S1" library="SparkFun-Switches" deviceset="MOMENTARY-SWITCH-SPST-2" device="-SMD-5.2MM-TALL"/>
-<part name="S2" library="SparkFun-Switches" deviceset="MOMENTARY-SWITCH-SPST-2" device="-SMD-5.2MM-TALL"/>
+<part name="S1" library="SparkFun-Switches" deviceset="MOMENTARY-SWITCH-SPST-2" device="-SMD-5.2MM-TALL" value="SWITCH"/>
+<part name="S2" library="SparkFun-Switches" deviceset="MOMENTARY-SWITCH-SPST-2" device="-SMD-5.2MM-TALL" value="SWITCH"/>
 <part name="C11" library="_111_IH" deviceset="CAPACITOR" device="" value="0.1uF"/>
 <part name="C12" library="_111_IH" deviceset="CAPACITOR" device="" value="0.1uF"/>
 <part name="GND12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -3682,12 +3682,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="VALUE" x="-53.34" y="-106.934" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
 <instance part="C11" gate="G$1" x="-94.22" y="-116.84" smashed="yes" rot="R90">
-<attribute name="NAME" x="-97.141" y="-115.316" size="1.778" layer="95" font="vector" rot="R90"/>
-<attribute name="VALUE" x="-92.061" y="-115.316" size="1.778" layer="96" font="vector" rot="R90"/>
+<attribute name="NAME" x="-97.141" y="-122.936" size="1.778" layer="95" font="vector" rot="R90"/>
+<attribute name="VALUE" x="-92.061" y="-125.476" size="1.778" layer="96" font="vector" rot="R90"/>
 </instance>
 <instance part="C12" gate="G$1" x="-51.04" y="-116.84" smashed="yes" rot="R90">
-<attribute name="NAME" x="-53.961" y="-115.316" size="1.778" layer="95" font="vector" rot="R90"/>
-<attribute name="VALUE" x="-48.881" y="-115.316" size="1.778" layer="96" font="vector" rot="R90"/>
+<attribute name="NAME" x="-53.961" y="-122.936" size="1.778" layer="95" font="vector" rot="R90"/>
+<attribute name="VALUE" x="-48.881" y="-122.936" size="1.778" layer="96" font="vector" rot="R90"/>
 </instance>
 <instance part="GND12" gate="1" x="-106.68" y="-121.92" smashed="yes">
 <attribute name="VALUE" x="-109.22" y="-124.46" size="1.778" layer="96"/>
