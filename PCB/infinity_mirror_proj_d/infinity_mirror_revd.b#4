@@ -1194,12 +1194,10 @@ design rules under a new name.</description>
 <via x="21" y="18" extent="1-16" drill="0.35"/>
 <wire x1="21" y1="18" x2="21" y2="17" width="0.254" layer="1"/>
 <wire x1="26" y1="15" x2="29" y2="12" width="0.254" layer="1"/>
-<wire x1="30.9" y1="12" x2="30.90198125" y2="12" width="0.254" layer="1"/>
 <wire x1="22.1" y1="3.9" x2="24" y2="3.9" width="0.254" layer="1"/>
 <wire x1="19.56" y1="4.42" x2="21.58" y2="4.42" width="0.254" layer="1"/>
 <wire x1="21.58" y1="4.42" x2="22.1" y2="3.9" width="0.254" layer="1"/>
 <wire x1="27" y1="3.9" x2="24" y2="3.9" width="0.254" layer="1"/>
-<wire x1="27" y1="3.9" x2="27.1" y2="4" width="0.254" layer="1"/>
 <wire x1="30" y1="4.42" x2="29.48" y2="3.9" width="0.254" layer="1"/>
 <wire x1="29.48" y1="3.9" x2="27" y2="3.9" width="0.254" layer="1"/>
 <contactref element="R9" pad="1"/>
@@ -1224,15 +1222,12 @@ design rules under a new name.</description>
 <wire x1="35" y1="7" x2="37.0988" y2="7" width="0.254" layer="1"/>
 <wire x1="28.9" y1="7" x2="28.9" y2="9" width="0.254" layer="1"/>
 <wire x1="30.901" y1="7" x2="30.9505" y2="6.9505" width="0.254" layer="1"/>
-<wire x1="30.9505" y1="6.9505" x2="31" y2="6.901" width="0.254" layer="1"/>
 <wire x1="22" y1="25" x2="21.5" y2="24.5" width="0.254" layer="1"/>
 <wire x1="21.5" y1="24.5" x2="21.5" y2="22.9" width="0.254" layer="1"/>
 <wire x1="21.5" y1="20" x2="21.5" y2="22.9" width="0.254" layer="1"/>
 <wire x1="37.0988" y1="7" x2="39" y2="7" width="0.508" layer="1"/>
 <wire x1="39" y1="7" x2="39" y2="8" width="0.508" layer="1"/>
 <wire x1="29" y1="12" x2="30.9" y2="12" width="0.254" layer="1"/>
-<wire x1="30.901" y1="11.999959375" x2="30.9" y2="12" width="0.508" layer="1"/>
-<wire x1="30.950009375" y1="6.9995" x2="30.9505" y2="6.9505" width="0.254" layer="1"/>
 <wire x1="30.901" y1="7" x2="30.9" y2="12" width="0.254" layer="1"/>
 <wire x1="30.901" y1="7" x2="28.9" y2="7" width="0.254" layer="1"/>
 <wire x1="30.901" y1="7" x2="31" y2="4.42" width="0.254" layer="1"/>
@@ -1381,16 +1376,9 @@ design rules under a new name.</description>
 <mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
 </mfgpreviewcolors>
 <errors>
-<approved hash="21,19,5295509752975095"/>
-<approved hash="21,19,1657ea55ebabe850"/>
-<approved hash="21,19,0438f838fc3afdc3"/>
 <approved hash="21,19,73397339713b70b8"/>
-<approved hash="21,19,88e78ae58b658967"/>
-<approved hash="21,19,8ae2891e88e174e2"/>
-<approved hash="21,19,be76bc77bc77be76"/>
-<approved hash="21,19,162017de1523eb22"/>
 <approved hash="21,19,a861aa63aa63a861"/>
-<approved hash="21,19,fe8cfe8cfc8efc8e"/>
+<approved hash="21,19,712471278d278924"/>
 </errors>
 </board>
 </drawing>

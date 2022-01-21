@@ -1060,12 +1060,12 @@ design rules under a new name.</description>
 <contactref element="U$3" pad="A"/>
 <contactref element="R7" pad="1"/>
 <contactref element="R9" pad="2"/>
-<wire x1="23" y1="21.1" x2="24.6" y2="21.1" width="0.254" layer="1"/>
-<wire x1="24.6" y1="21.1" x2="25" y2="21.5" width="0.254" layer="1"/>
-<via x="25" y="21.5" extent="1-16" drill="0.35"/>
-<wire x1="37" y1="20" x2="27.5" y2="20" width="0.254" layer="16"/>
-<wire x1="27.5" y1="20" x2="26" y2="21.5" width="0.254" layer="16"/>
-<wire x1="26" y1="21.5" x2="25" y2="21.5" width="0.254" layer="16"/>
+<wire x1="23" y1="21.1" x2="23.6" y2="21.1" width="0.254" layer="1"/>
+<wire x1="24" y1="21.5" x2="27" y2="21.5" width="0.254" layer="1"/>
+<wire x1="24" y1="21.5" x2="23.6" y2="21.1" width="0.254" layer="1"/>
+<via x="27" y="21.5" extent="1-16" drill="0.35"/>
+<wire x1="37" y1="20" x2="28.5" y2="20" width="0.254" layer="16"/>
+<wire x1="28.5" y1="20" x2="27" y2="21.5" width="0.254" layer="16"/>
 <via x="37" y="20" extent="1-16" drill="0.35"/>
 <wire x1="38.156665625" y1="19.843334375" x2="38" y2="20" width="0.254" layer="1"/>
 <wire x1="37" y1="20" x2="38" y2="20" width="0.254" layer="1"/>

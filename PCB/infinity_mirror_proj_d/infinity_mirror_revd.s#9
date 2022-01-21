@@ -3464,8 +3464,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="R11" library="_111_IH" deviceset="RESISTOR" device="" value="10k"/>
 <part name="SUPPLY9" library="SparkFun-PowerSymbols" deviceset="VCC_1" device="" value="VCC_5V"/>
 <part name="SUPPLY10" library="SparkFun-PowerSymbols" deviceset="VCC_2" device="" value="VCC_3V3"/>
-<part name="S1" library="SparkFun-Switches" deviceset="MOMENTARY-SWITCH-SPST-2" device="-SMD-5.2MM-TALL"/>
-<part name="S2" library="SparkFun-Switches" deviceset="MOMENTARY-SWITCH-SPST-2" device="-SMD-5.2MM-TALL"/>
+<part name="S1" library="SparkFun-Switches" deviceset="MOMENTARY-SWITCH-SPST-2" device="-SMD-5.2MM-TALL" value="SWITCH"/>
+<part name="S2" library="SparkFun-Switches" deviceset="MOMENTARY-SWITCH-SPST-2" device="-SMD-5.2MM-TALL" value="SWITCH"/>
 <part name="C11" library="_111_IH" deviceset="CAPACITOR" device="" value="0.1uF"/>
 <part name="C12" library="_111_IH" deviceset="CAPACITOR" device="" value="0.1uF"/>
 <part name="GND12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>

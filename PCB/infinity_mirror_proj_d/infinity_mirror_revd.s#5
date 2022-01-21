@@ -4272,6 +4272,19 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="206,1,63.5,-68.58,VCC_2,,,,,"/>
+<approved hash="206,1,63.5,-66.04,VCC_2,,,,,"/>
+<approved hash="208,1,86.36,-60.96,VCC_2,sup,,,,"/>
+<approved hash="208,1,63.5,-68.58,VCC_2,out,,,,"/>
+<approved hash="208,1,63.5,-66.04,VCC_2,out,,,,"/>
+<approved hash="208,1,-86.36,15.24,VCC_2,sup,,,,"/>
+<approved hash="208,1,104.14,-60.96,VCC_2,sup,,,,"/>
+<approved hash="208,1,91.44,111.76,VCC_2,sup,,,,"/>
+<approved hash="208,1,63.5,78.74,VCC_2,sup,,,,"/>
+<approved hash="208,1,109.22,78.74,VCC_2,sup,,,,"/>
+<approved hash="208,1,55.88,-40.64,VCC_2,sup,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>
