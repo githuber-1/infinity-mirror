@@ -3682,12 +3682,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="VALUE" x="-53.34" y="-106.934" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
 <instance part="C11" gate="G$1" x="-94.22" y="-116.84" smashed="yes" rot="R90">
-<attribute name="NAME" x="-97.141" y="-115.316" size="1.778" layer="95" font="vector" rot="R90"/>
-<attribute name="VALUE" x="-92.061" y="-115.316" size="1.778" layer="96" font="vector" rot="R90"/>
+<attribute name="NAME" x="-97.141" y="-122.936" size="1.778" layer="95" font="vector" rot="R90"/>
+<attribute name="VALUE" x="-92.061" y="-125.476" size="1.778" layer="96" font="vector" rot="R90"/>
 </instance>
 <instance part="C12" gate="G$1" x="-51.04" y="-116.84" smashed="yes" rot="R90">
-<attribute name="NAME" x="-53.961" y="-115.316" size="1.778" layer="95" font="vector" rot="R90"/>
-<attribute name="VALUE" x="-48.881" y="-115.316" size="1.778" layer="96" font="vector" rot="R90"/>
+<attribute name="NAME" x="-53.961" y="-122.936" size="1.778" layer="95" font="vector" rot="R90"/>
+<attribute name="VALUE" x="-48.881" y="-125.476" size="1.778" layer="96" font="vector" rot="R90"/>
 </instance>
 <instance part="GND12" gate="1" x="-106.68" y="-121.92" smashed="yes">
 <attribute name="VALUE" x="-109.22" y="-124.46" size="1.778" layer="96"/>
@@ -4063,20 +4063,22 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </net>
 <net name="VCC_2" class="0">
 <segment>
-<pinref part="C6" gate="G$1" pin="1"/>
-<wire x1="76.2" y1="-71.12" x2="76.2" y2="-66.04" width="0.1524" layer="91"/>
+<pinref part="SUPPLY4" gate="G$1" pin="VCC_2"/>
 <pinref part="C7" gate="G$1" pin="1"/>
 <wire x1="86.36" y1="-71.12" x2="86.36" y2="-66.04" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="OUT@1"/>
+<wire x1="86.36" y1="-66.04" x2="86.36" y2="-60.96" width="0.1524" layer="91"/>
 <wire x1="63.5" y1="-68.58" x2="68.58" y2="-68.58" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="OUT"/>
 <wire x1="63.5" y1="-66.04" x2="68.58" y2="-66.04" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="-68.58" x2="68.58" y2="-66.04" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="-66.04" x2="86.36" y2="-66.04" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="-66.04" x2="76.2" y2="-66.04" width="0.1524" layer="91"/>
 <junction x="68.58" y="-66.04"/>
+<pinref part="C6" gate="G$1" pin="1"/>
+<wire x1="76.2" y1="-66.04" x2="76.2" y2="-71.12" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="-66.04" x2="86.36" y2="-66.04" width="0.1524" layer="91"/>
+<junction x="76.2" y="-66.04"/>
 <junction x="86.36" y="-66.04"/>
-<pinref part="SUPPLY4" gate="G$1" pin="VCC_2"/>
-<wire x1="86.36" y1="-66.04" x2="86.36" y2="-60.96" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R1" gate="G$1" pin="2"/>
