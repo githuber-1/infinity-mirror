@@ -4449,9 +4449,9 @@ The Slot footprint only works if the mill layer is transmitted to the PCB fab ho
 <pinref part="U$1" gate="G$1" pin="U0TXD"/>
 </segment>
 <segment>
-<pinref part="J3" gate="G$1" pin="2"/>
-<wire x1="-81.28" y1="-73.66" x2="-76.2" y2="-73.66" width="0.1524" layer="91"/>
-<label x="-81.28" y="-73.66" size="1.778" layer="95"/>
+<pinref part="J3" gate="G$1" pin="3"/>
+<wire x1="-81.28" y1="-71.12" x2="-76.2" y2="-71.12" width="0.1524" layer="91"/>
+<label x="-81.28" y="-71.12" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -4594,9 +4594,9 @@ The Slot footprint only works if the mill layer is transmitted to the PCB fab ho
 <pinref part="U$1" gate="G$1" pin="U0RXD"/>
 </segment>
 <segment>
-<pinref part="J3" gate="G$1" pin="3"/>
-<wire x1="-81.28" y1="-71.12" x2="-76.2" y2="-71.12" width="0.1524" layer="91"/>
-<label x="-81.28" y="-71.12" size="1.778" layer="95"/>
+<pinref part="J3" gate="G$1" pin="2"/>
+<wire x1="-81.28" y1="-73.66" x2="-76.2" y2="-73.66" width="0.1524" layer="91"/>
+<label x="-81.28" y="-73.66" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPIO0" class="0">
@@ -4743,8 +4743,9 @@ The Slot footprint only works if the mill layer is transmitted to the PCB fab ho
 <label x="93.98" y="93.98" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="-30.48" y1="0" x2="-40.64" y2="0" width="0.1524" layer="91"/>
-<label x="-40.64" y="0" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="GPIO25"/>
+<wire x1="-27.94" y1="0" x2="-33.02" y2="0" width="0.1524" layer="91"/>
+<label x="-38.1" y="0" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="ENC_A" class="0">
@@ -4757,6 +4758,11 @@ The Slot footprint only works if the mill layer is transmitted to the PCB fab ho
 <junction x="58.42" y="53.34"/>
 <label x="48.26" y="53.34" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="GPIO34"/>
+<wire x1="-27.94" y1="10.16" x2="-33.02" y2="10.16" width="0.1524" layer="91"/>
+<label x="-38.1" y="10.16" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="ENC_B" class="0">
 <segment>
@@ -4767,6 +4773,11 @@ The Slot footprint only works if the mill layer is transmitted to the PCB fab ho
 <wire x1="114.3" y1="53.34" x2="124.46" y2="53.34" width="0.1524" layer="91"/>
 <junction x="114.3" y="53.34"/>
 <label x="116.84" y="53.34" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="GPIO35"/>
+<wire x1="-27.94" y1="7.62" x2="-33.02" y2="7.62" width="0.1524" layer="91"/>
+<label x="-38.1" y="7.62" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LED_DATA" class="0">
@@ -4799,10 +4810,6 @@ The Slot footprint only works if the mill layer is transmitted to the PCB fab ho
 </net>
 <net name="IO23" class="0">
 <segment>
-<wire x1="30.48" y1="-7.62" x2="38.1" y2="-7.62" width="0.1524" layer="91"/>
-<label x="33.02" y="-7.62" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="Q3" gate="NMOS" pin="S"/>
 <wire x1="81.28" y1="-33.02" x2="81.28" y2="-35.56" width="0.1524" layer="91"/>
 <wire x1="81.28" y1="-35.56" x2="81.28" y2="-43.18" width="0.1524" layer="91"/>
@@ -4810,6 +4817,11 @@ The Slot footprint only works if the mill layer is transmitted to the PCB fab ho
 <wire x1="81.28" y1="-35.56" x2="71.12" y2="-35.56" width="0.1524" layer="91"/>
 <pinref part="R10" gate="G$1" pin="1"/>
 <label x="83.82" y="-43.18" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="GPIO23"/>
+<wire x1="25.4" y1="20.32" x2="33.02" y2="20.32" width="0.1524" layer="91"/>
+<label x="27.94" y="20.32" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="EN" class="0">
@@ -4840,13 +4852,6 @@ The Slot footprint only works if the mill layer is transmitted to the PCB fab ho
 </sheet>
 </sheets>
 <errors>
-<approved hash="206,1,63.5,-68.58,VCC_2,,,,,"/>
-<approved hash="206,1,63.5,-66.04,VCC_2,,,,,"/>
-<approved hash="208,1,86.36,-60.96,VCC_2,sup,,,,"/>
-<approved hash="208,1,63.5,-68.58,VCC_2,out,,,,"/>
-<approved hash="208,1,63.5,-66.04,VCC_2,out,,,,"/>
-<approved hash="208,1,-86.36,15.24,VCC_2,sup,,,,"/>
-<approved hash="208,1,104.14,-60.96,VCC_2,sup,,,,"/>
 <approved hash="208,1,91.44,111.76,VCC_2,sup,,,,"/>
 <approved hash="208,1,63.5,78.74,VCC_2,sup,,,,"/>
 <approved hash="208,1,109.22,78.74,VCC_2,sup,,,,"/>
