@@ -5039,11 +5039,11 @@ The Slot footprint only works if the mill layer is transmitted to the PCB fab ho
 <label x="-10.16" y="-66.04" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="IO26" class="0">
+<net name="IO33" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="GPIO26"/>
-<wire x1="-27.94" y1="-2.54" x2="-38.1" y2="-2.54" width="0.1524" layer="91"/>
-<label x="-38.1" y="-2.54" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="GPIO33"/>
+<wire x1="-27.94" y1="2.54" x2="-38.1" y2="2.54" width="0.1524" layer="91"/>
+<label x="-38.1" y="2.54" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="Q3" gate="NMOS" pin="S"/>

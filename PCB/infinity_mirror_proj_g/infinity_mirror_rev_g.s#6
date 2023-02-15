@@ -4742,6 +4742,11 @@ The Slot footprint only works if the mill layer is transmitted to the PCB fab ho
 <wire x1="91.44" y1="93.98" x2="104.14" y2="93.98" width="0.1524" layer="91"/>
 <label x="93.98" y="93.98" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="GPIO19"/>
+<wire x1="25.4" y1="5.08" x2="33.02" y2="5.08" width="0.1524" layer="91"/>
+<label x="27.94" y="5.08" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="ENC_A" class="0">
 <segment>
@@ -4753,6 +4758,11 @@ The Slot footprint only works if the mill layer is transmitted to the PCB fab ho
 <junction x="58.42" y="53.34"/>
 <label x="48.26" y="53.34" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="GPIO22"/>
+<wire x1="25.4" y1="17.78" x2="33.02" y2="17.78" width="0.1524" layer="91"/>
+<label x="27.94" y="17.78" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="ENC_B" class="0">
 <segment>
@@ -4763,6 +4773,11 @@ The Slot footprint only works if the mill layer is transmitted to the PCB fab ho
 <wire x1="114.3" y1="53.34" x2="124.46" y2="53.34" width="0.1524" layer="91"/>
 <junction x="114.3" y="53.34"/>
 <label x="116.84" y="53.34" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="GPIO21"/>
+<wire x1="25.4" y1="10.16" x2="33.02" y2="10.16" width="0.1524" layer="91"/>
+<label x="27.94" y="10.16" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LED_DATA" class="0">
@@ -4837,13 +4852,6 @@ The Slot footprint only works if the mill layer is transmitted to the PCB fab ho
 </sheet>
 </sheets>
 <errors>
-<approved hash="206,1,63.5,-68.58,VCC_2,,,,,"/>
-<approved hash="206,1,63.5,-66.04,VCC_2,,,,,"/>
-<approved hash="208,1,86.36,-60.96,VCC_2,sup,,,,"/>
-<approved hash="208,1,63.5,-68.58,VCC_2,out,,,,"/>
-<approved hash="208,1,63.5,-66.04,VCC_2,out,,,,"/>
-<approved hash="208,1,-86.36,15.24,VCC_2,sup,,,,"/>
-<approved hash="208,1,104.14,-60.96,VCC_2,sup,,,,"/>
 <approved hash="208,1,91.44,111.76,VCC_2,sup,,,,"/>
 <approved hash="208,1,63.5,78.74,VCC_2,sup,,,,"/>
 <approved hash="208,1,109.22,78.74,VCC_2,sup,,,,"/>

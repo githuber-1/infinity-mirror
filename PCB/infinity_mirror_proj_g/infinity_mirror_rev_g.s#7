@@ -4742,10 +4742,6 @@ The Slot footprint only works if the mill layer is transmitted to the PCB fab ho
 <wire x1="91.44" y1="93.98" x2="104.14" y2="93.98" width="0.1524" layer="91"/>
 <label x="93.98" y="93.98" size="1.778" layer="95"/>
 </segment>
-<segment>
-<wire x1="-30.48" y1="0" x2="-40.64" y2="0" width="0.1524" layer="91"/>
-<label x="-40.64" y="0" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="ENC_A" class="0">
 <segment>

@@ -5015,17 +5015,6 @@ The Slot footprint only works if the mill layer is transmitted to the PCB fab ho
 <wire x1="109.22" y1="58.42" x2="109.22" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="IO23" class="0">
-<segment>
-<pinref part="Q3" gate="NMOS" pin="S"/>
-<wire x1="81.28" y1="-33.02" x2="81.28" y2="-35.56" width="0.1524" layer="91"/>
-<wire x1="81.28" y1="-35.56" x2="81.28" y2="-43.18" width="0.1524" layer="91"/>
-<junction x="81.28" y="-35.56"/>
-<wire x1="81.28" y1="-35.56" x2="71.12" y2="-35.56" width="0.1524" layer="91"/>
-<pinref part="R10" gate="G$1" pin="1"/>
-<label x="83.82" y="-43.18" size="1.778" layer="95" rot="R90"/>
-</segment>
-</net>
 <net name="EN" class="0">
 <segment>
 <pinref part="C3" gate="G$1" pin="1"/>
@@ -5055,6 +5044,15 @@ The Slot footprint only works if the mill layer is transmitted to the PCB fab ho
 <pinref part="U$1" gate="G$1" pin="GPIO26"/>
 <wire x1="-27.94" y1="-2.54" x2="-38.1" y2="-2.54" width="0.1524" layer="91"/>
 <label x="-38.1" y="-2.54" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="Q3" gate="NMOS" pin="S"/>
+<wire x1="81.28" y1="-33.02" x2="81.28" y2="-35.56" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="-35.56" x2="81.28" y2="-43.18" width="0.1524" layer="91"/>
+<junction x="81.28" y="-35.56"/>
+<wire x1="81.28" y1="-35.56" x2="71.12" y2="-35.56" width="0.1524" layer="91"/>
+<pinref part="R10" gate="G$1" pin="1"/>
+<label x="83.82" y="-43.18" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 </nets>
