@@ -453,6 +453,7 @@ S = Push Momentary Switch
 </deviceset>
 <deviceset name="CP2102">
 <gates>
+<gate name="G$1" symbol="CP2102_QFN24" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="CP2102_QFN24">
