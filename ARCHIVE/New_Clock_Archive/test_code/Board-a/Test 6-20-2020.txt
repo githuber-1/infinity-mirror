@@ -1,4 +1,0 @@
-Tested Infinity Mirror_a_Built 6-2-2020 on 6-20-2020
--DS1307, all 3 analog inputs and the daylight savings switch as well as the MSGEQ7 were confirmed to work as-is.
--LEDs work with this setup as well, although a jumper had to be ran from Arduino pin 6 to data_out pin on the 3
- pin terminal block. I failed to route the data_out pin on the PCB.
