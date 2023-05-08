@@ -201,7 +201,7 @@
 <circle x="47.5" y="34" radius="2.5" width="0.254" layer="39"/>
 <text x="41.94" y="27.46" size="1.778" layer="21">+</text>
 <text x="42.09" y="30.3" size="1.778" layer="21">-</text>
-<text x="49.66" y="7.69" size="1.5" layer="21" rot="R90">INFINITY MIRROR V1.0</text>
+<text x="49.66" y="6.69" size="1.5" layer="21" rot="R90">INFINITY MIRROR v0.9.0</text>
 <text x="35.54" y="16.35" size="1" layer="112" rot="R90">EN</text>
 <text x="13.57" y="27.91" size="1" layer="112" rot="R90">BOOT</text>
 <text x="12.55" y="36.54" size="0.6096" layer="21" rot="R180">RX</text>
@@ -883,12 +883,12 @@ design rules under a new name.</description>
 <attribute name="NAME" x="40.76" y="11.5775" size="0.6096" layer="25" font="vector" ratio="20" rot="R180" align="bottom-center"/>
 <attribute name="PROD_ID" value="DIO-09912" x="41" y="14" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="R4" library="_111_IH" package="0805" value="5.1K" x="43.01" y="14.74" smashed="yes" rot="R90">
+<element name="R4" library="_111_IH" package="0805" value="65" x="43.01" y="14.74" smashed="yes" rot="R90">
 <attribute name="NAME" x="42.74" y="13.131" size="0.6096" layer="25" font="vector" ratio="20" rot="R180" align="bottom-center"/>
 <attribute name="VALUE" x="43.11" y="16.409" size="0.6096" layer="27" font="vector" ratio="20" rot="R180" align="top-center"/>
 </element>
-<element name="U$2" library="infinity_mirror_revd" package="3-PIN-JST" value="3-PIN-JST" x="39.65" y="22.19" smashed="yes" rot="R90">
-<attribute name="NAME" x="38.14" y="21.29" size="0.6096" layer="21" rot="R270"/>
+<element name="U$2" library="infinity_mirror_revd" package="3-PIN-JST" value="3-PIN-JST" x="42.19" y="24.35" smashed="yes">
+<attribute name="NAME" x="41.29" y="25.86" size="0.6096" layer="21" rot="R180"/>
 </element>
 <element name="U$3" library="infinity_mirror_revd" package="PEC11R-4320F-S0012" value="PEC11R" x="25.5" y="29" smashed="yes" rot="MR90">
 <attribute name="NAME" x="33.37" y="34.29" size="0.6096" layer="22" rot="MR0"/>
@@ -1148,16 +1148,15 @@ design rules under a new name.</description>
 <via x="36" y="9" extent="1-16" drill="0.35"/>
 <wire x1="36" y1="9" x2="35.4" y2="8.4" width="0.508" layer="1"/>
 <wire x1="35.4" y1="8.4" x2="34.6" y2="8.4" width="0.508" layer="1"/>
-<wire x1="46.3048" y1="16.77625625" x2="41.715528125" y2="21.365528125" width="0.508" layer="1"/>
-<wire x1="46.3048" y1="16.77625625" x2="46.3048" y2="10" width="0.508" layer="1"/>
 <wire x1="43.8114" y1="7.5066" x2="46.3048" y2="10" width="0.508" layer="1"/>
-<wire x1="41.715528125" y1="21.365528125" x2="41.715528125" y2="27.004471875" width="0.508" layer="1"/>
-<wire x1="41.715528125" y1="27.004471875" x2="40.48" y2="28.24" width="0.508" layer="1"/>
+<wire x1="46.3048" y1="10" x2="46.3048" y2="25.4152" width="0.508" layer="1"/>
+<wire x1="46.3048" y1="25.4152" x2="43.48" y2="28.24" width="0.508" layer="1"/>
+<wire x1="43.48" y1="28.24" x2="40.48" y2="28.24" width="0.508" layer="1"/>
 <wire x1="43.8114" y1="2.0412" x2="43.8114" y2="3.4012" width="0.508" layer="1"/>
 <wire x1="43.8114" y1="2.0412" x2="43.3052" y2="1.535" width="0.508" layer="1"/>
 <wire x1="43.8114" y1="3.4012" x2="43.8114" y2="7.5066" width="0.508" layer="1"/>
-<wire x1="39.65" y1="20.19" x2="40.54" y2="20.19" width="0.508" layer="1"/>
-<wire x1="40.54" y1="20.19" x2="41.715528125" y2="21.365528125" width="0.508" layer="1"/>
+<wire x1="40.48" y1="28.24" x2="40.48" y2="24.64" width="0.508" layer="1"/>
+<wire x1="40.48" y1="24.64" x2="40.19" y2="24.35" width="0.508" layer="1"/>
 </signal>
 <signal name="LED+">
 <contactref element="D1" pad="A"/>
@@ -1222,9 +1221,8 @@ design rules under a new name.</description>
 <wire x1="27.3" y1="20.1" x2="27.5" y2="19.9" width="0.1524" layer="1"/>
 <wire x1="27.5" y1="19.9" x2="27.5" y2="21.1469125" width="0.254" layer="1"/>
 <wire x1="28.9330875" y1="22.58" x2="27.5" y2="21.1469125" width="0.254" layer="1"/>
-<wire x1="36.54" y1="24.19" x2="34.93" y2="22.58" width="0.254" layer="1"/>
-<wire x1="36.54" y1="24.19" x2="39.65" y2="24.19" width="0.254" layer="1"/>
-<wire x1="34.93" y1="22.58" x2="28.9330875" y2="22.58" width="0.254" layer="1"/>
+<wire x1="44.19" y1="22.58" x2="44.19" y2="24.35" width="0.254" layer="1"/>
+<wire x1="44.19" y1="22.58" x2="28.9330875" y2="22.58" width="0.254" layer="1"/>
 </signal>
 <signal name="N$2">
 <contactref element="U$3" pad="B"/>
